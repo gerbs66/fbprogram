@@ -138,8 +138,8 @@ figcaption:before {
 
 h1,h2,h3,h4,h5 {
 	font-weight: bold;
-	/*page-break-after: avoid;
-	page-break-inside:avoid;*/
+	page-break-after: avoid;
+	/*page-break-inside:avoid;*/
 }
 
 /*h1+p, h2+p, h3+p {
@@ -178,6 +178,10 @@ a.xref:after {
   content: " (page " target-counter(attr(href, url), page) ")";
 }
 
+div.gallerycontainer{
+  width: 100%;
+}  
+
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
@@ -211,6 +215,17 @@ hr {
     border-color: #3a005f;
 } 
 
+hr2 { 
+    display: block;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 3px;
+    border-color: #3a005f;
+}
+
 div.sponsor {
   font: 14pt;
   font-weight: bold;
@@ -218,7 +233,8 @@ div.sponsor {
 }
  
 div.pagebreak { 
-  page-break-after: always; 
+  page-break-after: always;
+  clear: both; 
 }
 
 table {
