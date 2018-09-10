@@ -180,6 +180,12 @@ a.xref:after {
 
 div.gallerycontainer{
   width: 100%;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }  
 
 div.gallery {
@@ -230,6 +236,7 @@ div.sponsor {
   font: 14pt;
   font-weight: bold;
   text-align: center;
+  clear: both;
 }
  
 div.pagebreak { 
@@ -250,6 +257,24 @@ th {
 td {
   text-align: left;
   padding:2px 12px;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+} 
+
+div.back{
+  text-align: center;
+  padding: 75% 0 0 0; 
 }
 
 
